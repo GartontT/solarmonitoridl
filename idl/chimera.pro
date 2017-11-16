@@ -284,7 +284,7 @@ for i=0L,(n_elements(info)-1) do begin
 
 ;======calculate average angle coronal hole is subjected histogramto======
 				dist=sqrt((arccent0)^(2)+(arccent1)^(2))
-				ang=2*asin(SQRT(dist/(2*rs)))
+				ang=asin(dist/rs)
 
 ;=====calculate area of CH with minimal projection effects======
 				trupixar=abs(area/cos(ang))
